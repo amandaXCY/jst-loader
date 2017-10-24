@@ -1,5 +1,5 @@
 {
-  "name": "jst-loader",
+  "name": "@amanda/jst-loader",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
