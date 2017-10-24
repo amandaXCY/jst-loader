@@ -3,8 +3,30 @@
 > 生成backbone可用的模板
 > 这里使用的lodash的模板
 
+### Install
+npm i -D jst-loader
+
+### Use in webpack
+
+```
+{
+  test: /\.(html)$/,
+  use: {
+    loader: 'html-loader',
+    options: {
+      attrs: [':data-src']
+    }
+  }
+}
+```
+
 ### Options
+
 ### templateSettings
+
+This options with lodash template sim
+
+(https://lodash.com/docs/4.17.4#template)[https://lodash.com/docs/4.17.4#template]    
 
 #### prettify
 
