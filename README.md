@@ -4,7 +4,7 @@
 > 这里使用的lodash的模板
 
 ### Install
-npm i -D jst-loader
+npm i -D @amanda/jst-loader
 
 ### Use in webpack
 
@@ -12,9 +12,9 @@ npm i -D jst-loader
 {
   test: /\.(html)$/,
   use: {
-    loader: 'html-loader',
+    loader: '@amanda/jst-loader',
     options: {
-      attrs: [':data-src']
+     
     }
   }
 }
@@ -41,18 +41,6 @@ options: {
 }
 ```
 
-#### processContent
-Type: function
-
-This option accepts a function which takes one argument (the file content) and returns a string which will be used as template string. The example below strips whitespace characters from the beginning and the end of each line.
-
-```
-options: {
-  processContent: function(src) {
-    return src.replace(/(^\s+|\s+$)/gm, '');
-  }
-}
-```
 
 #### exportFormats
 
@@ -75,6 +63,17 @@ module.exports = "Hello world";
 exports.default = "Hello world";
 ```
 
+
+```
+options: {
+  exportAsDefault: true
+}
+
+//or 
+options: {
+  exportAsMoudle: true
+}
+```
 
 
 
