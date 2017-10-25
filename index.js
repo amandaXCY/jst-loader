@@ -14,7 +14,7 @@ module.exports = function(content, map){
     
     try {
         const templateSettings = config.templateSettings || {};
-        let compiled = _.template(content, false, templateSettings).source;
+        let compiled = _.template(content, templateSettings).source;
  
 
         if (config.prettify) {
