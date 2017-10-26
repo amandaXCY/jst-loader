@@ -11,11 +11,15 @@
     "url": "https://github.com/amandaXCY/jst-loader.git"
   },
   "keywords": [
-    "underscore","jst","backbone","template","webpack"
+    "underscore",
+    "jst",
+    "backbone",
+    "template",
+    "webpack"
   ],
   "author": "Amanda",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "lodash": "^4.17.4"
   }
 }
